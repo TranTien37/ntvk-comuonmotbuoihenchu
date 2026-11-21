@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A little date with you</title>
+  <meta name="theme-color" content="#fff9f7">
+  <meta name="description" content="A cute romantic date proposal page — say yes, then plan our little date together.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Noto+Color+Emoji&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./i18n.js" defer></script>
+  <script src="./app.js" defer></script>
+<!-- eazo-platform-head:start -->
+<script src="https://cdn.eazo.ai/platform-assets/inspector.js" defer></script>
+<script defer src="https://cdn.eazo.ai/branding/eazo-brand-banner.js" data-eazo-app-id="i2d58jd4vyRY9swH"></script>
+<!-- eazo-platform-head:end -->
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <div class="corner">
+    <div class="locale-wrap">
+      <span class="locale-icon" aria-hidden="true">🌐</span>
+      <select class="locale" id="locale" data-i18n-locale-select aria-label="Language">
+        <option value="system" data-i18n="locale.system">Auto</option>
+        <option value="en-US">English</option>
+        <option value="zh-CN">中文</option>
+      </select>
+    </div>
+  </div>
+
+  <main>
+    <!-- Stage 1: the question -->
+    <section id="proposal" class="frame is-active" aria-labelledby="question">
+      <div class="proposal-card">
+        <div class="flower-illustration" aria-hidden="true">
+          <div class="flower-stem"></div>
+          <div class="flower-head"></div>
+        </div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">a little question for you</p>
+        <h1 id="question">
+          <span data-i18n="hero.questionBefore">Would you like to go on a</span>
+          <em data-i18n="hero.questionWord">date</em>
+          <span class="question-tail">
+            <span data-i18n="hero.questionAfter">with me?</span>
+            <span class="question-heart" aria-hidden="true">❤️</span>
+          </span>
+        </h1>
+        <div class="button-arena" id="arena">
+          <button class="yes-btn" id="yes" type="button">
+            <span class="yes-glow" aria-hidden="true"></span>
+            <span class="yes-label" data-i18n="hero.yes">YES, I'd love to! ❤️</span>
+          </button>
+          <button class="no-btn" id="no" type="button" data-i18n="hero.no">No</button>
+        </div>
+        <p class="dodge-hint" id="dodgeHint" data-i18n="hero.hint">psst… try catching the “No” 😌</p>
+        <p class="small-love" data-i18n="hero.signature">from my heart to yours</p>
+      </div>
+    </section>
+
+    <!-- Stage 2 + 3: celebration and the planner -->
+    <section id="planner" class="stage" aria-label="Plan our date">
+      <div class="planning-shell">
+        <div class="celebrate">
+          <span class="seal" aria-hidden="true">♥</span>
+          <h2 data-i18n="plan.yay">YAYYYYY! ❤️ You just made my day!</h2>
+          <p class="celebrate-sub" data-i18n="plan.subtitle">Now let's plan our little date!</p>
+        </div>
+
+        <div class="planning-card">
+          <p class="intro" data-i18n="plan.ourDate">you &amp; me</p>
+          <h3 class="card-title" data-i18n="plan.title">Let's make a memory</h3>
+
+          <form id="dateForm" novalidate>
+            <div class="field">
+              <label for="activity" data-i18n="plan.activityLabel">What would you like to do with me? 🥰</label>
+              <div class="input-wrap">
+                <select id="activity" class="select" required>
+                  <option value="" disabled selected data-i18n="plan.activityPlaceholder">Choose our little adventure</option>
+                  <option value="movie" data-i18n="activities.movie">🎬 Watch a Movie</option>
+                  <option value="coffee" data-i18n="activities.coffee">☕ Coffee Date</option>
+                  <option value="dinner" data-i18n="activities.dinner">🍽️ Dinner Date</option>
+                  <option value="pizza" data-i18n="activities.pizza">🍕 Pizza Date</option>
+                  <option value="walk" data-i18n="activities.walk">🌸 Romantic Walk</option>
+                  <option value="icecream" data-i18n="activities.icecream">🍦 Ice Cream Date</option>
+                  <option value="shopping" data-i18n="activities.shopping">🛍️ Shopping Together</option>
+                  <option value="bowling" data-i18n="activities.bowling">🎳 Bowling</option>
+                  <option value="gaming" data-i18n="activities.gaming">🎮 Gaming Date</option>
+                  <option value="sunset" data-i18n="activities.sunset">🌅 Watch the Sunset</option>
+                  <option value="surprise" data-i18n="activities.surprise">💝 Surprise Me!</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="field-title" id="date-label" data-i18n="plan.dateLabel">When are you free, beautiful? 📅</span>
+              <div class="calendar" role="group" aria-labelledby="date-label">
+                <div class="calendar-bar">
+                  <button type="button" class="nav-btn" id="previous">
+                    <span aria-hidden="true">‹</span>
+                    <span class="visually-hidden" data-i18n="calendar.previous">Previous month</span>
+                  </button>
+                  <strong id="month-label" aria-live="polite"></strong>
+                  <button type="button" class="nav-btn" id="next">
+                    <span aria-hidden="true">›</span>
+                    <span class="visually-hidden" data-i18n="calendar.next">Next month</span>
+                  </button>
+                </div>
+                <div class="weekdays" id="weekdays" aria-hidden="true"></div>
+                <div class="days" id="days"></div>
+                <p class="chosen-date" id="chosen-date" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="time" data-i18n="plan.timeLabel">What time works for you? ⏰</label>
+              <div class="input-wrap">
+                <select id="time" class="select" required>
+                  <option value="" disabled selected data-i18n="plan.timePlaceholder">Pick a time</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                  <option value="custom" data-i18n="plan.customTime">Choose a custom time…</option>
+                </select>
+              </div>
+              <div class="custom-time-wrap hidden" id="customWrap">
+                <input id="customTime" class="custom-time" type="time" step="300" aria-label="Custom time">
+                <span class="custom-time-hint" data-i18n="plan.customHint">your own hour, your own way ♡</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="note" data-i18n="plan.noteLabel">Anything you'd like to tell me? 💌</label>
+              <textarea id="note" data-i18n-placeholder="plan.notePlaceholder" placeholder="I'm excited because..." maxlength="400"></textarea>
+              <p class="helper" data-i18n="plan.noteHelper">Optional, but I'd love to hear it.</p>
+            </div>
+
+            <button type="submit" class="confirm-btn">
+              <span data-i18n="plan.confirm">Confirm Our Date ❤️</span>
+            </button>
+            <p class="form-error" id="formError" role="alert"></p>
+          </form>
+        </div>
+        <p class="footer-note" data-i18n="plan.footer">made with a little bit of courage and a lot of love</p>
+      </div>
+    </section>
+
+    <!-- Stage 4: confirmation -->
+    <section id="result" class="stage" aria-label="Your date confirmation">
+      <div class="result-wrap">
+        <div class="result-card">
+          <span class="result-mark" aria-hidden="true">💌</span>
+          <h2 data-i18n="result.title">It's a date! ❤️ I can't wait to see you!</h2>
+          <p class="result-sub" data-i18n="result.subtitle">Already counting the moments</p>
+
+          <div class="result-list">
+            <div class="result-row">
+              <span class="key" data-i18n="result.activity">Our plan</span>
+              <span class="value" id="outActivity"></span>
+            </div>
+            <div class="result-row">
+              <span class="key" data-i18n="result.date">Our day</span>
+              <span class="value" id="outDate"></span>
+            </div>
+            <div class="result-row">
+              <span class="key" data-i18n="result.time">Our time</span>
+              <span class="value" id="outTime"></span>
+            </div>
+            <div class="result-row message" id="noteRow">
+              <span class="key" data-i18n="result.note">Your sweet note</span>
+              <span class="value" id="outNote"></span>
+            </div>
+          </div>
+
+          <p class="countdown" id="countdown" aria-live="polite"></p>
+
+          <div class="result-actions">
+            <button type="button" class="secondary-btn" id="edit" data-i18n="result.edit">Edit our plan</button>
+            <button type="button" class="confirm-btn" id="share" data-i18n="result.share">Share our date ♡</button>
+          </div>
+          <p class="footer-note" data-i18n="result.footer">screenshot this and send it back to me 💕</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button type="button" class="sound-toggle" id="soundToggle" aria-pressed="true">
+    <span class="sound-icon" id="soundIcon" aria-hidden="true">♪</span>
+    <span class="visually-hidden" id="soundLabel" data-i18n="sound.mute">Mute music</span>
+  </button>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <audio id="bgm" src="./audio/bgm-loop.mp3" loop preload="auto"></audio>
+  <audio id="sparkle" src="./audio/sparkle.mp3" preload="auto"></audio>
+</body>
+</html>
