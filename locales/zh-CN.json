@@ -1,0 +1,96 @@
+{
+  "locale": {
+    "label": "语言",
+    "system": "自动"
+  },
+  "meta": {
+    "title": "和你的小约会"
+  },
+  "hero": {
+    "eyebrow": "有一个小小的问题想问你",
+    "questionBefore": "你愿意和我一起去",
+    "questionWord": "约会",
+    "questionAfter": "吗？",
+    "yes": "好呀，我愿意！❤️",
+    "no": "不要",
+    "noAlt1": "嗯…不要？",
+    "noAlt2": "先抓到我呀",
+    "noAlt3": "还是不要吗？🥺",
+    "noAlt4": "好吧，我继续跑",
+    "hint": "小声说…试着抓住那个「不要」😌",
+    "hintAfter": "这个按钮有点害羞",
+    "signature": "把我的心意送给你",
+    "languageLabel": "语言"
+  },
+  "plan": {
+    "yay": "好耶！❤️ 你让今天变得特别美好！",
+    "subtitle": "现在一起来计划我们的小约会吧！",
+    "ourDate": "你 和 我",
+    "title": "一起留下美好的回忆",
+    "activityLabel": "你想和我一起做什么？🥰",
+    "activityPlaceholder": "选一个小小的冒险",
+    "dateLabel": "亲爱的，你哪天有空？📅",
+    "timeLabel": "什么时间适合你？⏰",
+    "timePlaceholder": "选个时间",
+    "customTime": "选择自定义时间…",
+    "customHint": "你的时间，由你来定 ♡",
+    "noteLabel": "有什么想对我说的吗？💌",
+    "notePlaceholder": "我很期待，因为...",
+    "noteHelper": "可以不填，但我很想听听。",
+    "confirm": "确认我们的约会 ❤️",
+    "footer": "带着一点点勇气和很多很多喜欢",
+    "missingActivity": "先选一个我们的小冒险吧 💭",
+    "missingDate": "挑一个你觉得合适的日子 📅",
+    "missingTime": "告诉我几点来接你 ⏰",
+    "missingCustomTime": "选一下你想要的时间 ⏰"
+  },
+  "activities": {
+    "movie": "🎬 一起看电影",
+    "coffee": "☕ 咖啡约会",
+    "dinner": "🍽️ 晚餐约会",
+    "pizza": "🍕 披萨约会",
+    "walk": "🌸 浪漫散步",
+    "icecream": "🍦 冰淇淋约会",
+    "shopping": "🛍️ 一起逛街",
+    "bowling": "🎳 一起打保龄球",
+    "gaming": "🎮 游戏约会",
+    "sunset": "🌅 一起看日落",
+    "surprise": "💝 给我惊喜！"
+  },
+  "calendar": {
+    "previous": "上个月",
+    "next": "下个月",
+    "choose": "点选一个喜欢的日子 ♡",
+    "selected": "我们的约会：{{date}}",
+    "wd0": "日",
+    "wd1": "一",
+    "wd2": "二",
+    "wd3": "三",
+    "wd4": "四",
+    "wd5": "五",
+    "wd6": "六"
+  },
+  "result": {
+    "title": "约定好啦！❤️ 好期待见到你！",
+    "subtitle": "已经开始期待那一刻了",
+    "activity": "约会计划",
+    "date": "约会日期",
+    "time": "约会时间",
+    "note": "你的小留言",
+    "noNote": "只有满满的笑容 ♡",
+    "edit": "修改计划",
+    "share": "分享约会 ♡",
+    "footer": "截图发给我吧 💕",
+    "countdownDays": "距离我们的约会还有 {{count}} 天 ♡",
+    "countdownTomorrow": "明天就是我们的约会了，我坐不住啦 ♡",
+    "countdownToday": "今天就是我们的约会，很快就见面啦 ♡"
+  },
+  "toast": {
+    "copied": "约会详情已复制，发给我吧 💌",
+    "shareFail": "暂时没法分享，截个图也可以 ♡"
+  },
+  "sound": {
+    "mute": "关闭音乐",
+    "unmute": "播放音乐"
+  }
+}
