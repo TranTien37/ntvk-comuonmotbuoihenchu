@@ -45,16 +45,17 @@
     "missingCustomTime": "Pick your custom hour ⏰"
   },
   "activities": {
+    "bookcafe": "📚 Cozy Book & Acoustic Cafe",
+    "teahouse": "🍵 Minimalist Tea House",
+    "japanese": "🍣 Quiet Japanese Dinner (Sushi & Sashimi)",
+    "pottery": "🎨 Pottery or Paint & Sip Workshop",
+    "lakeside": "🌅 Lakeside Sunset Walk",
+    "museum": "🖼️ Art Exhibition or Museum",
     "movie": "🎬 Watch a Movie",
     "coffee": "☕ Coffee Date",
-    "dinner": "🍽️ Dinner Date",
     "pizza": "🍕 Pizza Date",
-    "walk": "🌸 Romantic Walk",
     "icecream": "🍦 Ice Cream Date",
-    "shopping": "🛍️ Shopping Together",
-    "bowling": "🎳 Bowling",
     "gaming": "🎮 Gaming Date",
-    "sunset": "🌅 Watch the Sunset",
     "surprise": "💝 Surprise Me!"
   },
   "calendar": {
