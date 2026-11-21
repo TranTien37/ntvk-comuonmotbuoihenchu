@@ -55,12 +55,12 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 .page-bg {
   position: fixed; inset: 0; z-index: -3;
   background:
-    linear-gradient(180deg, rgba(255, 250, 248, .58), rgba(250, 232, 243, .82)),
+    linear-gradient(180deg, rgba(255, 250, 248, .15), rgba(250, 232, 243, .25)),
     url('./assets/background.webp') center / cover no-repeat;
 }
 .page-bg::after {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(circle at 50% 34%, rgba(255, 255, 255, .9), transparent 46%);
+  background: radial-gradient(circle at 50% 34%, rgba(255, 255, 255, .35), transparent 46%);
 }
 
 .petals { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
