@@ -1,0 +1,96 @@
+{
+  "locale": {
+    "label": "Language",
+    "system": "Auto"
+  },
+  "meta": {
+    "title": "A little date with you"
+  },
+  "hero": {
+    "eyebrow": "a little question for you",
+    "questionBefore": "Would you like to go on a",
+    "questionWord": "date",
+    "questionAfter": "with me?",
+    "yes": "YES, I'd love to! ❤️",
+    "no": "No",
+    "noAlt1": "Hmm… No?",
+    "noAlt2": "Catch me first",
+    "noAlt3": "Still no? 🥺",
+    "noAlt4": "Okay, I'll keep running",
+    "hint": "psst… try catching the “No” 😌",
+    "hintAfter": "it's very shy, that button",
+    "signature": "from my heart to yours",
+    "languageLabel": "Language"
+  },
+  "plan": {
+    "yay": "YAYYYYY! ❤️ You just made my day!",
+    "subtitle": "Now let's plan our little date!",
+    "ourDate": "you & me",
+    "title": "Let's make a memory",
+    "activityLabel": "What would you like to do with me? 🥰",
+    "activityPlaceholder": "Choose our little adventure",
+    "dateLabel": "When are you free, beautiful? 📅",
+    "timeLabel": "What time works for you? ⏰",
+    "timePlaceholder": "Pick a time",
+    "customTime": "Choose a custom time…",
+    "customHint": "your own hour, your own way ♡",
+    "noteLabel": "Anything you'd like to tell me? 💌",
+    "notePlaceholder": "I'm excited because...",
+    "noteHelper": "Optional, but I'd love to hear it.",
+    "confirm": "Confirm Our Date ❤️",
+    "footer": "made with a little bit of courage and a lot of love",
+    "missingActivity": "Pick our little adventure first 💭",
+    "missingDate": "Choose a day that feels right 📅",
+    "missingTime": "Tell me when to be there ⏰",
+    "missingCustomTime": "Pick your custom hour ⏰"
+  },
+  "activities": {
+    "movie": "🎬 Watch a Movie",
+    "coffee": "☕ Coffee Date",
+    "dinner": "🍽️ Dinner Date",
+    "pizza": "🍕 Pizza Date",
+    "walk": "🌸 Romantic Walk",
+    "icecream": "🍦 Ice Cream Date",
+    "shopping": "🛍️ Shopping Together",
+    "bowling": "🎳 Bowling",
+    "gaming": "🎮 Gaming Date",
+    "sunset": "🌅 Watch the Sunset",
+    "surprise": "💝 Surprise Me!"
+  },
+  "calendar": {
+    "previous": "Previous month",
+    "next": "Next month",
+    "choose": "Tap a date that feels right ♡",
+    "selected": "Our date: {{date}}",
+    "wd0": "Sun",
+    "wd1": "Mon",
+    "wd2": "Tue",
+    "wd3": "Wed",
+    "wd4": "Thu",
+    "wd5": "Fri",
+    "wd6": "Sat"
+  },
+  "result": {
+    "title": "It's a date! ❤️ I can't wait to see you!",
+    "subtitle": "Already counting the moments",
+    "activity": "Our plan",
+    "date": "Our day",
+    "time": "Our time",
+    "note": "Your sweet note",
+    "noNote": "Just a date full of smiles ♡",
+    "edit": "Edit our plan",
+    "share": "Share our date ♡",
+    "footer": "screenshot this and send it back to me 💕",
+    "countdownDays": "Only {{count}} days until our date ♡",
+    "countdownTomorrow": "Our date is tomorrow — I can't sit still ♡",
+    "countdownToday": "Our date is today — see you soon ♡"
+  },
+  "toast": {
+    "copied": "Our date details copied — send them my way 💌",
+    "shareFail": "Couldn't share just now — try a screenshot instead ♡"
+  },
+  "sound": {
+    "mute": "Mute music",
+    "unmute": "Play music"
+  }
+}
