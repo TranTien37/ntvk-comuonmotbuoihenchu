@@ -187,9 +187,9 @@ section.is-active { display: block; animation: stage-in .6s cubic-bezier(.2, .8,
 @keyframes sway { to { transform: rotate(8deg); } }
 .flower-illustration::before,
 .flower-illustration::after {
-  content: '✦'; position: absolute; color: #dfa0bd; font-size: 20px; top: 18px; left: 12px;
+  content: '✦'; position: absolute; color: #dfa0bd; font-size: 20px; top: 18px; left: -12px;
 }
-.flower-illustration::after { content: '✿'; color: var(--lilac); top: 74px; left: 138px; font-size: 16px; }
+.flower-illustration::after { content: '✿'; color: var(--lilac); top: 82px; left: 168px; font-size: 16px; }
 
 .eyebrow {
   font: 28px/1.2 var(--font-script); color: #c47f9c; margin: 0 0 6px;
